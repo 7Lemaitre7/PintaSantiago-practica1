@@ -7,9 +7,9 @@ docker pull <nombre imagen>
 
 docker pull hello-world
 
-<img width="915" height="223" alt="image" src="https://github.com/user-attachments/assets/29dc148e-e77c-4009-8f60-4cdc876f7561" />
-
 ```
+
+<img width="915" height="223" alt="image" src="https://github.com/user-attachments/assets/29dc148e-e77c-4009-8f60-4cdc876f7561" />
 
 Descarga una versión específica de la imagen, cada imagen tiene etiquetas (tags) para diferentes versiones.
 Una imagen puede tener la etiqueta latest para representar la última versión, si no se especifica una etiqueta se hará referencia a la versión latest.
@@ -19,9 +19,9 @@ docker pull <nombre imagen>:<tag>
 
 docker pull hello-world:latest
 
-<img width="916" height="180" alt="image" src="https://github.com/user-attachments/assets/cf17d9c8-bdb7-4b5a-9254-fbb649a566b7" />
-
 ```
+
+<img width="916" height="180" alt="image" src="https://github.com/user-attachments/assets/cf17d9c8-bdb7-4b5a-9254-fbb649a566b7" />
 
 Descargar la imagen **hello-world**
 # COMPLETADO
@@ -43,9 +43,8 @@ Descargar la imagen  **nginx** en la versión **alpine**
 ```
 docker images
 
-<img width="690" height="108" alt="image" src="https://github.com/user-attachments/assets/44f0d993-8e53-4475-88e7-fd5dfb760d9a" />
-
 ```
+<img width="690" height="108" alt="image" src="https://github.com/user-attachments/assets/44f0d993-8e53-4475-88e7-fd5dfb760d9a" />
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
@@ -59,22 +58,26 @@ El comando docker inspect se utiliza para obtener información detallada sobre u
 ```
 docker inspect <nombre imagen>
 
-<img width="795" height="764" alt="image" src="https://github.com/user-attachments/assets/410cfd78-dc46-490c-b103-62bcecae4e7a" />
-
+docker inspect hello-world
+```
+```
 docker inspect <nombre imagen>:<tag>
 
-<img width="592" height="878" alt="image" src="https://github.com/user-attachments/assets/0840f609-b2a4-4422-a2c9-1c02cf8c1965" />
+docker inspect nginx:alpine
 
 ```
+
+<img width="795" height="764" alt="image" src="https://github.com/user-attachments/assets/410cfd78-dc46-490c-b103-62bcecae4e7a" />
+
+<img width="592" height="878" alt="image" src="https://github.com/user-attachments/assets/0840f609-b2a4-4422-a2c9-1c02cf8c1965" />
 
 Inspeccionar la imagen hello-world 
 
 ```
 docker inspect hello-world
+```
 
 <img width="598" height="574" alt="image" src="https://github.com/user-attachments/assets/72ec9d5b-97f0-46ae-8d30-de433be0aa0f" />
-
-```
 
 # COMPLETADO
 
@@ -90,20 +93,18 @@ El algoritmo con el que se genera el ID es SHA256 ó SHA-256, incluso aparece co
 
 ```
 docker images | grep <termino a buscar>
+```
 
 <img width="704" height="106" alt="image" src="https://github.com/user-attachments/assets/526d8fa3-ce0a-47fd-aede-f651a5bf678a" />
-
-```
 
 ### Para eliminar una imagen
 Eliminar permanentemente la imagen de tu sistema Docker.
 
 ```
 docker rmi <nombre imagen>:<tag>
+```
 
 <img width="736" height="71" alt="image" src="https://github.com/user-attachments/assets/a667fdbd-45f3-49a1-bdf2-20a8a61a9297" />
-
-```
 
 Eliminar la imagen hello-world 
 # COMPLETAR
@@ -117,8 +118,8 @@ Es una buena práctica detener y eliminar todos los contenedores que dependan de
 ```
 docker rmi -f <nombre imagen>:<tag>
 
+```
 Se volvió a instalar la imagen hello-world:latest
 
 <img width="744" height="69" alt="image" src="https://github.com/user-attachments/assets/b9976fbc-8bf1-456d-8cc8-098cd8b20bd0" />
 
-```
